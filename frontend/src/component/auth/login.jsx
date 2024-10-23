@@ -27,21 +27,21 @@ export default function SignIn() {
 
   return (
     <div
-      className="min-vh-100 d-flex align-items-center justify-content-center"
-      style={{
-        backgroundImage:
-          "url('https://images.unsplash.com/photo-1710162734135-8dc148f53abe?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')", // Replace with your preferred image URL
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
+     className="min-vh-100 d-flex align-items-center justify-content-center"
+  style={{
+    backgroundImage:
+      "url('https://images.unsplash.com/photo-1497445462247-4330a224fdb1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.0.3&q=80&w=1080')", // New background image URL
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+  }}
     >
       <div
         className="container p-4 bg-white rounded shadow-lg d-flex flex-column align-items-center gap-4"
         style={{ maxWidth: "400px", opacity: 0.95 }}
       >
         <div className="text-center mb-4">
-          <h2 className="font-weight-bold text-dark">Sign In</h2>
+          <h2 className="font-weight-bold text-dark">Log In Page</h2>
           <p className="text-muted">Access your account</p>
         </div>
 

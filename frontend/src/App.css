@@ -1,205 +1,393 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+/* SignUp page container */
+section {
+  background-color: #f5f5f5;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
-/* Navbar container */
-.navbar {
-  background-color: #4CAF50; /* Green background */
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-around; /* Equal spacing */
-  align-items: center;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+
+/* Heading */
+h2 {
+  font-size: 2rem;
+  color: #333;
+  transition: color 0.3s ease;
 }
-.nav-link {
-  color: white;
+
+h2:hover {
+  color: #007bff;
+}
+
+/* Form input fields */
+input.form-control {
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  padding: 0.75rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input.form-control:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+}
+
+/* Submit button */
+button.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  padding: 0.75rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button.btn-primary:hover {
+  background-color: #0056b3;
+  box-shadow: 0 10px 20px rgba(0, 91, 187, 0.4);
+}
+
+/* Text link hover */
+a {
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0056b3;
   text-decoration: none;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 10px 20px;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  border-radius: 5px;
 }
 
-/* Bloglist.css */
+/* Container */
+.container {
+  max-width: 400px;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading and Text */
+h2 {
+  font-size: 2rem;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+h2:hover {
+  color: #007bff;
+}
+
+p.text-muted {
+  font-size: 1rem;
+  color: #6c757d;
+  margin-bottom: 1rem;
+  transition: color 0.3s ease;
+}
+
+p.text-muted:hover {
+  color: #0056b3;
+}
+
+/* Form Input Fields */
+.form-control {
+  border-radius: 8px;
+  border: 2px solid #007bff;
+  padding: 0.75rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+}
+
+/* Submit Button */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  padding: 0.75rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  box-shadow: 0 10px 20px rgba(0, 91, 187, 0.4);
+}
+
+/* Link Hover */
+a.text-primary {
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+a.text-primary:hover {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+
+/* Blog Container */
 .blog-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 20px;
+  gap: 1.5rem;
+  padding: 2rem;
+  justify-content: center;
+  background-color: #f9f9f9;
 }
 
+/* Blog Card */
 .blog-card {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  margin: 20px;
-  padding: 20px;
-  transition: transform 0.2s;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .blog-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
+/* Blog Title */
 .blog-title {
-  font-size: 1.5em;
-  margin-bottom: 10px;
+  font-size: 1.5rem;
   color: #333;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
 }
 
+.blog-title:hover {
+  color: #007bff;
+}
+
+/* Blog Author */
 .blog-author {
-  font-size: 0.9em;
-  margin-bottom: 15px;
-  color: #888;
+  color: #777;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
 }
 
+/* Blog Content */
 .blog-content {
-  font-size: 1em;
   color: #555;
-  line-height: 1.6;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
 }
+
+/* Button Container */
 .button-container {
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
+  gap: 0.5rem;
 }
 
-.update-button,
-.delete-button {
-  padding: 8px 12px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
+/* Update Button */
 .update-button {
-  background-color: #4caf50; /* Green */
+  background-color: #007bff;
   color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .update-button:hover {
-  background-color: #45a049; /* Darker green */
+  background-color: #0056b3;
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
 }
 
+/* Delete Button */
 .delete-button {
-  background-color: #f44336; /* Red */
+  background-color: #dc3545;
   color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .delete-button:hover {
-  background-color: #e53935; /* Darker red */
+  background-color: #c82333;
+  box-shadow: 0 5px 15px rgba(220, 53, 69, 0.4);
 }
-/* Responsive Design */
+
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
   .blog-container {
     flex-direction: column;
     align-items: center;
   }
+
+  .blog-card {
+    max-width: 100%;
+  }
 }
-/* Add this to your CSS file or a <style> tag in your component */
-/* Style the form container */
+/* Form Container */
 .form-update {
-  background-color: #f8f9fa;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 2rem;
   max-width: 600px;
-  margin: 20px auto;
+  margin: 2rem auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Style each form group */
-.form-update .form-group {
-  margin-bottom: 20px;
+.form-update:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
-/* Label styling */
-.form-update label {
+/* Form Labels */
+.form-update .form-label {
+  font-size: 1.2rem;
   font-weight: bold;
-  font-size: 16px;
   color: #333;
 }
 
-/* Input field styling */
+/* Form Controls (Inputs) */
 .form-update .form-control {
-  margin: auto;
-  border-radius: 5px;
-  border: 1px solid #ced4da;
-  padding: 10px;
-  transition: border-color 0.3s ease-in-out;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Input field on focus */
 .form-update .form-control:focus {
-  border-color: #007bff;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+  border-color: #0056b3;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
 }
 
-/* Submit button styling */
-.form-update button[type="submit"] {
+/* Button Styling */
+.form-update .btn-primary {
   background-color: #007bff;
-  border-color: #007bff;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Submit button on hover */
-.form-update button[type="submit"]:hover {
+.form-update .btn-primary:hover {
   background-color: #0056b3;
-  border-color: #004085;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
 }
 
-/* Add some margin to the button */
-.form-update button {
-  margin-top: 10px;
-  width: 50%;
+/* Button Active State */
+.form-update .btn-primary:active {
+  background-color: #004085;
+  transform: translateY(0);
+  box-shadow: none;
 }
 
-/* Form container width for mobile */
+/* Form Responsiveness */
 @media (max-width: 768px) {
   .form-update {
-    padding: 20px;
-    width: 90%;
+    padding: 1.5rem;
+    max-width: 90%;
+  }
+
+  .form-update .form-control {
+    width: 100%;
+  }
+}
+/* Form Container */
+.form-update {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 2rem;
+  max-width: 500px;
+  margin: 2rem auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-update:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Form Labels */
+.form-update .form-label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Form Controls (Inputs) */
+.form-update .form-control {
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-update .form-control:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+/* Button Styling */
+.form-update .btn-primary {
+  background-color: #007bff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-update .btn-primary:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+}
+
+/* Button Active State */
+.form-update .btn-primary:active {
+  background-color: #004085;
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Title Styling */
+h1 {
+  color: #333;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+/* Form Responsiveness */
+@media (max-width: 768px) {
+  .form-update {
+    padding: 1.5rem;
+    max-width: 90%;
   }
 
   .form-update .form-control {

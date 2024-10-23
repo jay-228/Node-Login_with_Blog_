@@ -18,15 +18,7 @@ function Editblog() {
   
   const {id,userId}=useParams()
   
-  // useEffect(() => {
-  //   axios
-  //     .post(`${process.env.REACT_APP_BASEURL}/post/get/${id}`, {formdata}, {
-  //       withCredentials: true,
-  //     })
-  //     .then((response) => console.log(response.data))
-  //     .catch((error) => console.error("Error fetching product:", error));
-  // }, [id]);
-
+  
   const handlchange = (e) => {
     const { name, value } = e.target;
     setformdata({ ...formdata, [name]: value });
@@ -52,7 +44,7 @@ function Editblog() {
       <div className="container">
         <div className="row">
           <div className="col-12 text-center">
-            <h1>EditProduct Page</h1>
+            <h1>Update Product Page</h1>
           </div>
         </div>
         <div className="row">

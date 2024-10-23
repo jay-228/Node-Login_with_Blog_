@@ -38,7 +38,7 @@ export default function SignUp() {
               <div className="card-body p-4">
                 <div className="row justify-content-center">
                   <div className="col-lg-6">
-                    <h2 className="text-center fw-bold mb-3">Sign Up</h2>
+                    <h2 className="text-center fw-bold mb-3">Sign Up Page</h2>
                     <form onSubmit={handleSubmit}>
                       <div className="mb-3">
                         <input
@@ -87,14 +87,7 @@ export default function SignUp() {
                       </div>
                     </form>
                   </div>
-                  <div className="col-lg-5 d-flex align-items-center">
-                    <img
-                      src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp"
-                      className="img-fluid"
-                      alt="Sample"
-                      style={{ maxHeight: "300px" }}
-                    />
-                  </div>
+                  
                 </div>
               </div>
             </div>
